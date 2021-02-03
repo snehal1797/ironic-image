@@ -3,6 +3,13 @@ bind-dynamic
 enable-tftp
 tftp-root=/shared/tftpboot
 
+
+# This option stops dnsmasq from negotiating a larger blocksize for TFTP
+# transfers. It will slow things down, but may rescue some broken TFTP
+# clients.
+tftp-no-blocksize
+
+
 # Disable listening for DNS
 port=0
 
